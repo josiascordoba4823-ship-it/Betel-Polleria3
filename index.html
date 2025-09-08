@@ -11,6 +11,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <style>
+      @media (max-width: 640px) {
+        .container {
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        }
+        .product-card {
+          margin-bottom: 1rem;
+        }
+        #products-container {
+          grid-template-columns: 1fr !important;
+        }
+        .category-btn {
+          width: 100%;
+          margin-bottom: 0.5rem;
+        }
+        .hero-pattern {
+          padding: 2rem 0;
+        }
+        .wholesale-banner {
+          padding: 2rem 1rem;
+        }
+      }
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
       * {
@@ -81,9 +103,31 @@
           transform: scale(1);
         }
       }
+      .category-btn {
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+.category-btn.active,
+.category-btn:hover {
+  background: #e53e3e;
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(229,62,62,0.15);
+}
+.bg-red-600, .bg-green-600, .bg-gray-600, .bg-blue-600 {
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+.bg-red-600:hover, .bg-green-600:hover, .bg-gray-600:hover, .bg-blue-600:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
     </style>
 </head>
 <body class="min-h-screen">
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5493731659732" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg p-4 flex items-center justify-center animate-bounce transition-all duration-300">
+    <i class="fab fa-whatsapp fa-2x"></i>
+  </a>
 
   <!-- Header -->
   <header id="navbar" class="bg-white shadow-lg sticky top-0 z-50">
@@ -385,7 +429,7 @@ let cart = [];
     "pollos-frescos": [
       {
         name: "Pollo Entero Premium",
-        price: 54700,
+        price: 52325,
         available: "5 unidades",
         img: "https://media.istockphoto.com/id/1282866808/es/foto/pollo-crudo-fresco.jpg?s=612x612&w=0&k=20&c=ea-rFdFe50937D5dVlP501c8e9au5BxCUH5yfBSy8vI=",
         description:
@@ -393,14 +437,14 @@ let cart = [];
       },
       {
         name: "Pollo Entero Premium",
-        price: 54700,
+        price: 52325,
         available: "5 unidades",
         img: "https://media.istockphoto.com/id/1282866808/es/foto/pollo-crudo-fresco.jpg?s=612x612&w=0&k=20&c=ea-rFdFe50937D5dVlP501c8e9au5BxCUH5yfBSy8vI=",
         description: "Cajon de Pollo fresco N°7 TRES ARROYOS",
       },
       {
         name: "Pollo Entero Premium",
-        price: 54700,
+        price: 52325,
         available: "5 unidades",
         img: "https://media.istockphoto.com/id/1282866808/es/foto/pollo-crudo-fresco.jpg?s=612x612&w=0&k=20&c=ea-rFdFe50937D5dVlP501c8e9au5BxCUH5yfBSy8vI=",
         description: "Cajon de Pollo fresco N°8 TRES ARROYOS",
@@ -409,7 +453,7 @@ let cart = [];
     "cortes-especiales": [
       {
         name: "Suprema de Pollo",
-        price: 100600,
+        price: 96135,
         available: "100 kg",
         img: "https://media.gettyimages.com/id/93456470/es/foto/dos-materias-primas-pechuga-de-pollo-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=7cJvSD15VR3UR3nJdjFIsQhLzgwmq7XpiSGNrua91Uw=",
         description: "Cajon de suprema 15kg",
@@ -423,7 +467,7 @@ let cart = [];
       },
       {
         name: "Pata Muslo",
-        price: 29590,
+        price: 28275,
         available: "40 kg",
         img: "imagen/pata muslo1.jpg",
         description: "cajon Pata muslo IQF 15kg",
