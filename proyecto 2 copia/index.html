@@ -3,36 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bethel Polleria - Catálogo de Productos</title>
-  <link rel="icon" type="image/png" href="logos/Logo de Bethel.png" />
+    <title>Betel Polleria - Catálogo de Productos</title>
+  <link rel="icon" type="image/png" href="logos/logo 1(de2).png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <style>
-      @media (max-width: 640px) {
-        .container {
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
-        }
-        .product-card {
-          margin-bottom: 1rem;
-        }
-        #products-container {
-          grid-template-columns: 1fr !important;
-        }
-        .category-btn {
-          width: 100%;
-          margin-bottom: 0.5rem;
-        }
-        .hero-pattern {
-          padding: 2rem 0;
-        }
-        .wholesale-banner {
-          padding: 2rem 1rem;
-        }
-      }
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
       * {
@@ -103,31 +81,9 @@
           transform: scale(1);
         }
       }
-      .category-btn {
-  transition: all 0.3s cubic-bezier(.4,0,.2,1);
-}
-.category-btn.active,
-.category-btn:hover {
-  background: #e53e3e;
-  color: white;
-  transform: scale(1.08);
-  box-shadow: 0 4px 16px rgba(229,62,62,0.15);
-}
-.bg-red-600, .bg-green-600, .bg-gray-600, .bg-blue-600 {
-  transition: all 0.3s cubic-bezier(.4,0,.2,1);
-}
-.bg-red-600:hover, .bg-green-600:hover, .bg-gray-600:hover, .bg-blue-600:hover {
-  filter: brightness(1.1);
-  transform: scale(1.05);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-}
     </style>
 </head>
 <body class="min-h-screen">
-  <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/5493731659732" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg p-4 flex items-center justify-center animate-bounce transition-all duration-300">
-    <i class="fab fa-whatsapp fa-2x"></i>
-  </a>
 
   <!-- Header -->
   <header id="navbar" class="bg-white shadow-lg sticky top-0 z-50">
@@ -152,8 +108,8 @@ window.addEventListener('scroll', () => {
     <div class="container mx-auto px-4 py-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="flex items-center mb-4 md:mb-0">
-          <img src="logos/Logo de Bethel.png" alt="Logo Bethel Polleria" class="w-20 h-20 rounded-full mr-3" />
-          <h1 class="text-2xl font-bold text-gray-800">Bethel Polleria
+          <img src="logos/logo 1.png" alt="Logo Betel Polleria" class="w-20 h-20 rounded-full mr-3" />
+          <h1 class="text-2xl font-bold text-gray-800">Betel Polleria
         </div>
 
         <div
@@ -225,6 +181,12 @@ window.addEventListener('scroll', () => {
         </button>
         <button
           class="category-btn px-6 py-3 rounded-full border-2 border-gray-300 text-gray-600 font-semibold"
+          data-category="pollos-congelados"
+        >
+          Pollo Congelado
+        </button>
+        <button
+          class="category-btn px-6 py-3 rounded-full border-2 border-gray-300 text-gray-600 font-semibold"
           data-category="cortes-especiales"
         >
           Cortes Especiales
@@ -264,7 +226,7 @@ window.addEventListener('scroll', () => {
   <footer class="bg-gray-800 text-gray-300 py-8">
     <div class="container mx-auto px-4 text-center">
       <p>
-        © 2025 Bethel Polleria. Todos los derechos reservados.
+        © 2024 Pollos Frescos. Todos los derechos reservados.
       </p>
       <div class="mt-4 space-x-6">
         <a href="#" class="hover:text-white"><i class="fab fa-facebook fa-lg"></i></a>
@@ -429,106 +391,164 @@ let cart = [];
     "pollos-frescos": [
       {
         name: "Pollo Entero Premium",
-        price: 48500,
-        available: "5 unidades",
+        price: 8.99,
+        available: "50 unidades",
         img: "https://media.istockphoto.com/id/1282866808/es/foto/pollo-crudo-fresco.jpg?s=612x612&w=0&k=20&c=ea-rFdFe50937D5dVlP501c8e9au5BxCUH5yfBSy8vI=",
         description:
-          "cajon de pollo N°6 TRES ARROYOS",
+          "Pollo de corral, listo para ser un platillo en tu mesa ",
       },
       {
-        name: "Pollo Entero Premium",
-        price: 48500,
-        available: "5 unidades",
-        img: "https://media.istockphoto.com/id/1282866808/es/foto/pollo-crudo-fresco.jpg?s=612x612&w=0&k=20&c=ea-rFdFe50937D5dVlP501c8e9au5BxCUH5yfBSy8vI=",
-        description: "Cajon de Pollo fresco N°7 TRES ARROYOS",
+        name: "Pechugas de Pollo",
+        price: 12.99,
+        available: "30 kg",
+        img: "https://media.gettyimages.com/id/93456470/es/foto/dos-materias-primas-pechuga-de-pollo-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=7cJvSD15VR3UR3nJdjFIsQhLzgwmq7XpiSGNrua91Uw=",
+        description: "Cortes premium sin hueso, ideales para tu dietas",
       },
       {
-        name: "Pollo Entero Premium",
-        price: 48500,
-        available: "5 unidades",
-        img: "https://media.istockphoto.com/id/1282866808/es/foto/pollo-crudo-fresco.jpg?s=612x612&w=0&k=20&c=ea-rFdFe50937D5dVlP501c8e9au5BxCUH5yfBSy8vI=",
-        description: "Cajon de Pollo fresco N°8 TRES ARROYOS",
+        name: "Pollo N8",
+        price: 9.50,
+        available: "40 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53a95d71-ed16-422b-9abb-e9031257365f.png",
+        description: "Pollo fresco N8, calidad garantizada",
+      },
+      {
+        name: "Pollo N9",
+        price: 9.80,
+        available: "35 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4d2b9b7a-f9c9-4021-9d70-a17f1842f4dc.png",
+        description: "Pollo fresco N9, sabor y frescura",
+      },
+    ],
+    "pollos-congelados": [
+      {
+        name: "Pollo Entero Congelado",
+        price: 7.50,
+        available: "60 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0aee73f0-77ce-4f25-b4fd-21ebc5d2ae02.png",
+        description: "Pollo congelado para conservar frescura",
+      },
+      {
+        name: "Pechugas Congeladas",
+        price: 11.50,
+        available: "40 kg",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae0fda3a-b59a-4804-8c34-9e1cf212d787.png",
+        description: "Pechugas congeladas listas para cocinar",
+      },
+      {
+        name: "Pollo N8 Congelado",
+        price: 8.90,
+        available: "45 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d634506d-74bd-4df8-a88c-e5b3efd7e543.png",
+        description: "Pollo congelado N8, calidad premium",
+      },
+      {
+        name: "Pollo N9 Congelado",
+        price: 9.20,
+        available: "40 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e33cd75b-468f-4f44-b11d-800099531a2a.png",
+        description: "Pollo congelado N9, sabor y frescura",
       },
     ],
     "cortes-especiales": [
       {
         name: "Suprema de Pollo",
-        price: 93600,
-        available: "100 kg",
-        img: "https://media.gettyimages.com/id/93456470/es/foto/dos-materias-primas-pechuga-de-pollo-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=7cJvSD15VR3UR3nJdjFIsQhLzgwmq7XpiSGNrua91Uw=",
-        description: "Cajon de suprema 15kg",
+        price: 13.50,
+        available: "25 kg",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cd44fe75-31e8-445b-b8bb-3c24cb59bea8.png",
+        description: "Corte suprema, jugoso y tierno",
       },
       {
         name: "Alitas de Pollo",
-        price: 31400,
-        available: "3",
-        img: "imagen/alitas.png",
-        description: "cajon de Alitas 15kg",
+        price: 10.00,
+        available: "30 kg",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2667fda1-9d78-4c0b-a3ba-f45e63f71dac.png",
+        description: "Alitas frescas para tus mejores recetas",
       },
       {
         name: "Pata Muslo",
-        price: 28300,
+        price: 9.00,
         available: "40 kg",
-        img: "imagen/pata muslo1.jpg",
-        description: "cajon Pata muslo IQF 15KG",
-      },
-      { name: " pata muslo",
-        price: 22650,
-        img: "imagen/pata muslo1.jpg",
-        description: " <strong>cajon de pata muslo IQF 12KG</strong>",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e0883e02-e87b-440a-a7ef-abbab6ab75c3.png",
+        description: "Pata muslo con piel, ideal para guisos",
       },
       {
-        name: "Carne Molida",
-        price: 36150,
-        available: "40 kg",
-        img: "imagen/molida.webp",
-        description: "cajon de carne mecanica 20kg (pollo) fresca y natural",
+        name: "Pollo Molido",
+        price: 8.50,
+        available: "20 kg",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e56b51a-3350-4fd3-b63d-b8988696acdd.png",
+        description: "Carne molida de pollo fresca y natural",
       },
-      
-    
+      {
+        name: "Pollo Trozado",
+        price: 9.20,
+        available: "35 kg",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3490e864-4e27-41a3-a210-ab7acaddedf0.png",
+        description: "Pollo trozado listo para cocinar",
+      },
     ],
     "productos-derivados": [
       {
-        name: "Medallon Jamon y Queso",
-        price: 8400,
-        available: "20 paquetes",
-        img: "imagen/jamon y queso.jpg",
-        description: "medallones de jamon y queso por KG, ideales para freir",
+        name: "Patitas Clásicas x 5kg",
+        price: 15.00,
+        available: "10 paquetes",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/661055a6-fb64-4702-904a-13dd86ed43f3.png",
+        description: "Patitas clásicas para snacks y guisos",
+      },
+      {
+        name: "Patitas Crujix x 6kg",
+        price: 18.00,
+        available: "8 paquetes",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18f981a9-d438-465b-bcd0-428c4cb9ae34.png",
+        description: "Patitas crujientes para los amantes del sabor",
+      },
+      {
+        name: "Dips de Pollo Sabor Cheddar",
+        price: 7.00,
+        available: "50 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/07670ec9-a08d-4ab9-ac3f-a2df9484727d.png",
+        description: "Dips cremosos con sabor cheddar",
+      },
+      {
+        name: "Medallones Clásicos",
+        price: 12.00,
+        available: "40 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76df8934-5361-41e2-a04a-d4cc46de1166.png",
+        description: "Medallones de pollo clásicos, listos para freír",
+      },
+      {
+        name: "Medallones de Jamón y Queso",
+        price: 14.00,
+        available: "30 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/769a6af8-a9db-434f-97e3-f8b3d310cb26.png",
+        description: "Deliciosos medallones rellenos de jamón y queso",
       },
       {
         name: "Medallones de Espinaca y Queso",
-        price: 8400,
-        available: "20 paquetes",
-        img: "imagen/123.jpg",
-        description: "medallones de espinaca y queso por KG. Especial para freir",
+        price: 14.00,
+        available: "30 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f72a0a4-7e0e-45ec-bf81-caf99a2a6cb2.png",
+        description: "Medallones con espinaca y queso, opción saludable",
       },
       {
-        name: "Salchichas La Blanca",
-        price: 850,
-        available: "50 unidades",
-        img: "imagen/salchichas.jpg",
-        description: "salchichas de pollo La Blanca, sabor inigualable",
+        name: "Medallones Primavera Mix de Vegetales",
+        price: 15.00,
+        available: "25 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc003dac-205d-48f9-9b5d-6375a932e256.png",
+        description: "Medallones con mezcla de vegetales frescos",
       },
       {
-        name: "Burger Medallones La Blanca",
-        price: 577,
-        available: "40 unidades",
-        img: "imagen/burger.jpg",
-        description: "Burger Medallones clásicos",
+        name: "Griller Burger",
+        price: 16.00,
+        available: "20 unidades",
+        img: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cda0b53e-a133-4058-90ca-1e27b3db130d.png",
+        description: "Hamburguesas de pollo para grillar",
       },
       {
-        name: "Queso Rallado La Quesera ",
-        price: 12120,
-        available: "3 unidades",
-        img: "imagen/queso rallado la quesera.jpg",
-        description: "Caja de Queso Rallado 20x40GR",
-      },
-      {
-        name: "Queso  Rallado Nogolac",
-        price: 9465,
-        available: "3 unidades",
-        img: "imagen/queso rallado nogolac.jpg",
-        description: "Caja de Queso Rallado 20x30GR",
+        name: "Huevos",
+        price: 3.50,
+        available: "100 unidades",
+        img: "https://img.freepik.com/foto-gratis/huevos_74190-2361.jpg?semt=ais_hybrid&w=740",
+        description: "Huevos frescos para acompañar tus platos",
       },
     ],
   };
@@ -546,13 +566,14 @@ let cart = [];
       <div class="relative">
         <img src="${product.img}" alt="${product.name}" class="w-full h-48 object-cover" />
         <div class="absolute top-4 left-4 price-tag text-white px-3 py-1 rounded-full text-sm font-bold">
-          AR$${product.price.toLocaleString('es-AR')}
+          $${product.price.toFixed(2)} / kg
         </div>
       </div>
       <div class="p-6">
         <h3 class="text-xl font-bold text-gray-800 mb-2">${product.name}</h3>
         <p class="text-gray-600 mb-4">${product.description}</p>
         <div class="flex justify-between items-center">
+          <span class="text-sm text-gray-500">Disponible: ${product.available}</span>
           <button onclick="addToCart('${product.name}', ${product.price})" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
             <i class="fas fa-cart-plus mr-2"></i>Agregar
           </button>
